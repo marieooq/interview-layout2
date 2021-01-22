@@ -30,10 +30,10 @@ const Home = () => {
           <div className={Style.radioLinkContainer}>
             <div className={Style.checkboxContainer}>
               <input type="checkbox" id="remember-me" name="remember-me" />
-              <label for="remember-me">Remember me</label>
+              <label htmlFor="remember-me">Remember me</label>
             </div>
             <div className={Style.forgotPasswordContainer}>
-              <Link>Forgot Password</Link>
+              <Link to="/">Forgot Password</Link>
             </div>
           </div>
           <div className={Style.loginContainer}>
