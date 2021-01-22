@@ -8,4 +8,4 @@
 
 ## ✅ Link
 
-[https://marieotaki.com/](https://marieotaki.com/)
+You can check the demo [here](https://layout-example.netlify.app/).
