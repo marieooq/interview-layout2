@@ -8,27 +8,29 @@ const Login = () => {
   return (
     <div className={Style.container}>
       <div className={Style.header}>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">{`<`}</Link>
-            </li>
-            <li>Teacher Profile</li>
-            <li>
-              <Link to="/login">
-                <img src={menu} alt="menu" />
-              </Link>
-            </li>
-          </ul>
-        </nav>
-        <div className={Style.profile}>
-          <img src={profile} alt="profile" />
-        </div>
-        <p className={Style.name}>Teacher Name</p>
-        <div className={Style.updateButtonContainer}>
-          <Link to="/login" className={Style.updateButton}>
-            Update Profile Photo
-          </Link>
+        <div className={Style.headerInner}>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">{`<`}</Link>
+              </li>
+              <li>Teacher Profile</li>
+              <li>
+                <Link to="/login">
+                  <img src={menu} alt="menu" />
+                </Link>
+              </li>
+            </ul>
+          </nav>
+          <div className={Style.profile}>
+            <img src={profile} alt="profile" />
+          </div>
+          <p className={Style.name}>Teacher Name</p>
+          <div className={Style.updateButtonContainer}>
+            <Link to="/login" className={Style.updateButton}>
+              Update Profile Photo
+            </Link>
+          </div>
         </div>
       </div>
       <div className={Style.cardListContainer}>

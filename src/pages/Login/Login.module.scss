@@ -6,33 +6,39 @@ body {
 
     .header {
       width: 100%;
-      max-width: 374px;
+
       background-color: #7ab3de;
-      nav {
-        ul {
-          list-style: none;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 16px 0;
-          margin: 0;
 
-          li {
-            color: #fff;
-            padding: 0;
+      .headerInner {
+        min-width: 374px;
+        max-width: 768px;
+        margin: 0 auto;
+        nav {
+          ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
             margin: 0;
-            a {
-              text-decoration: none;
+
+            li {
               color: #fff;
+              padding: 0;
+              margin: 0;
+              a {
+                text-decoration: none;
+                color: #fff;
+              }
             }
-          }
 
-          li:first-child {
-            padding-left: 16px;
-          }
+            li:first-child {
+              padding-left: 16px;
+            }
 
-          li:last-child {
-            padding-right: 16px;
+            li:last-child {
+              padding-right: 16px;
+            }
           }
         }
       }
@@ -77,6 +83,7 @@ body {
       .card {
         background-color: #fff;
         width: 80%;
+        max-width: 768px;
         margin: 0 auto;
         padding: 18px 30px;
         border-radius: 11px;
