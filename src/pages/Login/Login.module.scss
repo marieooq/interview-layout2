@@ -73,6 +73,10 @@ body {
         line-height: 30px;
         width: 100%;
         font-size: 12px;
+
+        .pen {
+          margin-right: 10px;
+        }
       }
     }
     .cardListContainer {
@@ -93,12 +97,20 @@ body {
           color: #6693b5;
           font-size: 12px;
           margin-bottom: 15px;
+          font-weight: bold;
         }
 
         .contactItem {
           color: #0f0f0f;
           font-size: 12px;
           margin-top: 12px;
+
+          .phone {
+            margin-right: 10px;
+          }
+          .envelope {
+            margin-right: 10px;
+          }
         }
       }
     }
