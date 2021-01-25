@@ -22,3 +22,16 @@
     width: 35%;
   }
 }
+
+@media screen and (min-width: 376px) and (max-width: 1024px) {
+  .userContainer {
+    .userContainerLeft {
+      width: 25%;
+    }
+    .userContainerRight {
+      width: 30%;
+    }
+  }
+}
+@media screen and (min-width: 1025px) {
+}
