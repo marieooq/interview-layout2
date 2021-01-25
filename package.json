@@ -40,5 +40,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": "/Users/marieotaki/work/codes/react/interview-layout",
+  "author": "Marie Otaki <otakimarie@gmail.com>",
+  "license": "MIT"
 }

@@ -1,94 +1,160 @@
-body {
-  background-color: #7ab3de;
-  color: #fff;
+.container {
+  height: 100vh;
 
-  .container {
-    .hero {
-      display: none;
-    }
-    .inner {
-      width: 70%;
-      max-width: 374px;
+  .header {
+    width: 100%;
+    background-color: #7ab3de;
+    padding-bottom: 20px;
+
+    .headerInner {
+      min-width: 374px;
+      max-width: 768px;
       margin: 0 auto;
-      margin-top: 176px;
-
-      .logo {
-        text-align: center;
-        img {
-          width: 173px;
-        }
-      }
-
-      p.catch {
-        text-align: center;
-        font-size: 17px;
-        margin-bottom: 44px;
-      }
-
-      .form {
-        input.textInput {
-          width: 100%;
-          border: 1px solid #fff;
-          background-color: #7ab3de;
-          border-radius: 18px;
-          padding: 9px 18px;
-          box-sizing: border-box;
-          // height: 35px;
-          position: relative;
-          margin-bottom: 20px;
-        }
-        input.textInput::placeholder {
-          color: #fff;
-          font-size: 16px;
-        }
-
-        .radioLinkContainer {
+      nav {
+        ul {
+          list-style: none;
           display: flex;
           justify-content: space-between;
-          margin-bottom: 23px;
-          .forgotPasswordContainer {
+          align-items: center;
+          padding: 16px 0;
+          margin: 0;
+
+          li {
+            color: #fff;
+            padding: 0;
+            margin: 0;
             a {
-              color: #fff;
               text-decoration: none;
+              color: #fff;
             }
           }
-        }
 
-        .loginContainer {
-          text-align: center;
-          width: 100%;
-          border: 1px solid #fff;
-          background-color: #fff;
-          border-radius: 18px;
-          height: 35px;
-          a.loginButton {
-            display: inline-block;
-            text-decoration: none;
-            color: #7ab3de;
-            line-height: 35px;
-            width: 100%;
+          li:first-child {
+            padding-left: 16px;
+          }
+
+          li:last-child {
+            padding-right: 16px;
           }
         }
       }
     }
   }
 
-  @media screen and (min-width: 376px) and (max-width: 1024px) {
+  .headerCardContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
   }
-  @media screen and (min-width: 1025px) {
-    .container {
+
+  .headerCard {
+    width: 48%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 10px 0;
+    .headerCardInner {
       display: flex;
       justify-content: space-between;
-      .hero {
-        display: block;
-        width: 50%;
-        height: 100vh;
-        background-image: url(../../images/hero.jpg);
-        background-size: cover;
+      align-items: center;
+      width: 85%;
+      margin: 0 auto;
+      .photo {
+        background-color: red;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
       }
-      .inner {
-        width: 50%;
+      .profileInfoContainer {
+        .name {
+          font-size: 12px;
+          color: #334e79;
+        }
+        .status {
+          font-size: 13px;
+          color: #707070;
+        }
       }
     }
   }
+
+  .mainContainer {
+    width: 90%;
+    margin: 0 auto;
+
+    .searchInput {
+      width: 100%;
+      height: 40px;
+      margin-bottom: 16px;
+      input.textInput {
+        width: 100%;
+        border: 1px solid #bebebe;
+        padding: 17px;
+        box-sizing: border-box;
+        border-radius: 20px;
+      }
+      input.textInput::placeholder {
+        font-size: 12px;
+      }
+    }
+
+    .loginContainer {
+      text-align: center;
+      width: 100%;
+      border: 1px solid #fff;
+      background-color: #fff;
+      border-radius: 18px;
+      height: 35px;
+      a.loginButton {
+        display: inline-block;
+        text-decoration: none;
+        color: #7ab3de;
+        line-height: 35px;
+        width: 100%;
+      }
+    }
+
+    //cardContainer
+    .cardListContainer {
+      height: 100%;
+      background-color: #f5f5f5;
+      padding: 16px 0;
+
+      .card {
+        background-color: #fff;
+        width: 80%;
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 18px 30px;
+        border-radius: 11px;
+        box-shadow: #00000029 0px 3px 6px;
+
+        .contactInfo {
+          color: #6693b5;
+          font-size: 12px;
+          margin-bottom: 15px;
+          font-weight: bold;
+        }
+
+        .contactItem {
+          color: #0f0f0f;
+          font-size: 12px;
+          margin-top: 12px;
+
+          .phone {
+            margin-right: 10px;
+          }
+          .envelope {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 1024px) {
+}
+@media screen and (min-width: 1025px) {
 }
