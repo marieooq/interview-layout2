@@ -3,9 +3,8 @@ import { Link } from 'react-router-dom';
 import Style from './Home.module.scss';
 import menu from '../../images/menu.svg';
 import userAddressCard from '../../images/userAddressCard.svg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAddressCard } from '@fortawesome/free-solid-svg-icons';
 import Button from '../../components/Button/Button';
+import UserCard from '../../components/UserCard/UserCard';
 
 const Home = () => {
   return (
@@ -76,25 +75,14 @@ const Home = () => {
           />
         </div>
 
-        <div className={Style.userContainer}>
-          <div className={Style.userContainerLeft}>
-            <div className={Style.userPhoto}></div>
-            <div className={Style.userName}>Name</div>
-          </div>
-          <div className={Style.userContainerRight}>
-            <Button
-              borderColor="#6693B5"
-              backgroundColor="#6693B5"
-              color="#fff"
-              text="Check in"
-              path="/"
-              width="80px"
-            />
-            <div>
-              <img src={userAddressCard} alt="address-card" />
-            </div>
-          </div>
-        </div>
+        <UserCard />
+        <UserCard />
+        <UserCard />
+        <UserCard />
+        <UserCard />
+        <UserCard />
+        <UserCard />
+        <UserCard />
       </div>
       {/* mainContainer */}
     </div>
