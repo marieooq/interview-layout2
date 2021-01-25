@@ -49,40 +49,67 @@ const Home = () => {
       {/* header */}
       {/* mainContainer */}
       <div className={Style.mainContainer}>
-        <div className={Style.searchInput}>
-          <input
-            placeholder="search"
-            id="user-name"
-            className={Style.textInput}
-          />
+        <div className={Style.filterContainer}>
+          <div className={Style.searchInput}>
+            <input
+              placeholder="search"
+              id="user-name"
+              className={Style.textInput}
+            />
+          </div>
+          <div className={Style.buttonContainer}>
+            <Button
+              borderColor="#6693B5"
+              backgroundColor="#6693B5"
+              color="#fff"
+              text="Scheduled Children"
+              path="/"
+              width="49%"
+            />
+            <Button
+              borderColor="#6693B5"
+              backgroundColor="#fff"
+              color="#6693B5"
+              text="Other Children"
+              path="/"
+              width="49%"
+            />
+          </div>
         </div>
-        <div className={Style.buttonContainer}>
-          <Button
-            borderColor="#6693B5"
-            backgroundColor="#6693B5"
-            color="#fff"
-            text="Scheduled Children"
-            path="/"
-            width="49%"
-          />
-          <Button
-            borderColor="#6693B5"
-            backgroundColor="#fff"
-            color="#6693B5"
-            text="Other Children"
-            path="/"
-            width="49%"
-          />
+        <div className={Style.userCardContainer}>
+          <UserCard />
+          <UserCard />
+          <UserCard />
+          <UserCard />
+          <UserCard />
+          <UserCard />
+          <UserCard />
+          <UserCard />
+          <UserCard />
+          <UserCard />
+          <UserCard />
+          <UserCard />
+          <UserCard />
+          <UserCard />
+          <UserCard />
+          <UserCard />
+          <UserCard />
+          <UserCard />
+          <UserCard />
+          <UserCard />
+          <UserCard />
+          <UserCard />
+          <UserCard />
+          <UserCard />
+          <UserCard />
+          <UserCard />
+          <UserCard />
+          <UserCard />
+          <UserCard />
+          <UserCard />
+          <UserCard />
+          <UserCard />
         </div>
-
-        <UserCard />
-        <UserCard />
-        <UserCard />
-        <UserCard />
-        <UserCard />
-        <UserCard />
-        <UserCard />
-        <UserCard />
       </div>
       {/* mainContainer */}
     </div>
