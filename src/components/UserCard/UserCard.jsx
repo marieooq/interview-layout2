@@ -3,7 +3,7 @@ import Button from '../Button/Button';
 import Style from './UserCard.module.scss';
 import userAddressCard from '../../images/userAddressCard.svg';
 
-const UserCard = () => {
+const UserCard = ({ text }) => {
   return (
     <div className={Style.userContainer}>
       <div className={Style.userContainerLeft}>
@@ -15,7 +15,7 @@ const UserCard = () => {
           borderColor="#6693B5"
           backgroundColor="#6693B5"
           color="#fff"
-          text="Check in"
+          text={text}
           path="/"
           width="80px"
         />

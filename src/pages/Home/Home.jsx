@@ -88,41 +88,31 @@ const Home = () => {
           </div>
         </div>
         <div className={Style.userCardContainer}>
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
+          <UserCard text={status} />
+          <UserCard text={status} />
+          <UserCard text={status} />
+          <UserCard text={status} />
+          <UserCard text={status} />
+          <UserCard text={status} />
+          <UserCard text={status} />
+          <UserCard text={status} />
+          <UserCard text={status} />
+          <UserCard text={status} />
+          <UserCard text={status} />
+          <UserCard text={status} />
+          <UserCard text={status} />
+          <UserCard text={status} />
+          <UserCard text={status} />
+          <UserCard text={status} />
+          <UserCard text={status} />
+          <UserCard text={status} />
+          <UserCard text={status} />
+          <UserCard text={status} />
+          <UserCard text={status} />
+          <UserCard text={status} />
+          <UserCard text={status} />
+          <UserCard text={status} />
+          <UserCard text={status} />
         </div>
       </div>
       {/* mainContainer */}

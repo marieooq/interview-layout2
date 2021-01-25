@@ -17,7 +17,9 @@ const Button = ({
   const handleChange = (e) => {
     // setStatus(e.target.value);
     e.preventDefault();
-    status === 'scheduled' ? setStatus('other') : setStatus('scheduled');
+    text === 'Scheduled Children'
+      ? setStatus('Check in')
+      : setStatus('Drop in');
   };
 
   return (
