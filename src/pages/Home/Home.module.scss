@@ -86,7 +86,7 @@
     .searchInput {
       width: 100%;
       height: 40px;
-      margin-bottom: 16px;
+      margin: 10px 0 16px;
       input.textInput {
         width: 100%;
         border: 1px solid #bebebe;
@@ -99,21 +99,26 @@
       }
     }
 
-    .loginContainer {
-      text-align: center;
-      width: 100%;
-      border: 1px solid #fff;
-      background-color: #fff;
-      border-radius: 18px;
-      height: 35px;
-      a.loginButton {
-        display: inline-block;
-        text-decoration: none;
-        color: #7ab3de;
-        line-height: 35px;
-        width: 100%;
-      }
+    .buttonContainer {
+      display: flex;
+      justify-content: space-between;
     }
+
+    // .loginContainer {
+    //   text-align: center;
+    //   width: 100%;
+    //   border: 1px solid #fff;
+    //   background-color: #fff;
+    //   border-radius: 18px;
+    //   height: 35px;
+    //   a.loginButton {
+    //     display: inline-block;
+    //     text-decoration: none;
+    //     color: #7ab3de;
+    //     line-height: 35px;
+    //     width: 100%;
+    //   }
+    // }
 
     //cardContainer
     .cardListContainer {

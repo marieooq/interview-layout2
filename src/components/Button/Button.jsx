@@ -7,7 +7,7 @@ const Button = ({ borderColor, backgroundColor, color, text, path }) => {
     <div
       className={Style.buttonContainer}
       style={{
-        border: `2px solid ${borderColor}`,
+        border: `1px solid ${borderColor}`,
         backgroundColor: `${backgroundColor}`,
       }}
     >

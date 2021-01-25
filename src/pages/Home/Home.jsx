@@ -58,13 +58,22 @@ const Home = () => {
             className={Style.textInput}
           />
         </div>
-        <Button
-          borderColor="#6693B5"
-          backgroundColor="#6693B5"
-          color="#fff"
-          text="Scheduled Children"
-          path="/"
-        />
+        <div className={Style.buttonContainer}>
+          <Button
+            borderColor="#6693B5"
+            backgroundColor="#6693B5"
+            color="#fff"
+            text="Scheduled Children"
+            path="/"
+          />
+          <Button
+            borderColor="#6693B5"
+            backgroundColor="#fff"
+            color="#6693B5"
+            text="Other Children"
+            path="/"
+          />
+        </div>
 
         <div className={Style.cardListContainer}>
           <div className={Style.card}>
