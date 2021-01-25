@@ -38,12 +38,14 @@
     box-shadow: 0px 3px 6px #00000029;
     width: 230px;
     display: block;
+    padding: 10px;
+    border-radius: 10px;
     // margin-bottom: 15px;
     .userContainerLeft {
       // display: flex;
       // justify-content: space-between;
       // align-items: center;
-      // width: 30%;
+      width: 50%;
       // .userPhoto {
       //   width: 50px;
       //   height: 50px;
@@ -55,7 +57,8 @@
       // display: flex;
       // justify-content: space-between;
       // align-items: center;
-      // width: 35%;
+      float: right;
+      width: 50%;
     }
   }
 }
