@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Style from './Home.module.scss';
 import menu from '../../images/menu.svg';
@@ -7,6 +7,10 @@ import Button from '../../components/Button/Button';
 import UserCard from '../../components/UserCard/UserCard';
 
 const Home = () => {
+  const [status, setStatus] = useState('scheduled');
+  useEffect(() => {
+    console.log(status);
+  }, [status]);
   return (
     <div className={Style.container}>
       <div className={Style.header}>
@@ -68,6 +72,8 @@ const Home = () => {
               text="Scheduled Children"
               path="/"
               width="49%"
+              status={status}
+              setStatus={setStatus}
             />
             <Button
               borderColor="#6693B5"
@@ -76,10 +82,15 @@ const Home = () => {
               text="Other Children"
               path="/"
               width="49%"
+              status={status}
+              setStatus={setStatus}
             />
           </div>
         </div>
         <div className={Style.userCardContainer}>
+          <UserCard />
+          <UserCard />
+          <UserCard />
           <UserCard />
           <UserCard />
           <UserCard />
