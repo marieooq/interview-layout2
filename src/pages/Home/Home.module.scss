@@ -104,44 +104,69 @@
       display: flex;
       justify-content: space-between;
       border-bottom: 1px solid #f5f5f5;
+      margin-bottom: 10px;
     }
 
-    //cardContainer
-    .cardListContainer {
-      height: 100%;
-      background-color: #f5f5f5;
-      padding: 16px 0;
-
-      .card {
-        background-color: #fff;
-        width: 80%;
-        max-width: 768px;
-        margin: 0 auto;
-        padding: 18px 30px;
-        border-radius: 11px;
-        box-shadow: #00000029 0px 3px 6px;
-
-        .contactInfo {
-          color: #6693b5;
-          font-size: 12px;
-          margin-bottom: 15px;
-          font-weight: bold;
-        }
-
-        .contactItem {
-          color: #0f0f0f;
-          font-size: 12px;
-          margin-top: 12px;
-
-          .phone {
-            margin-right: 10px;
-          }
-          .envelope {
-            margin-right: 10px;
-          }
+    .userContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+      .userContainerLeft {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 30%;
+        .userPhoto {
+          width: 50px;
+          height: 50px;
+          background-color: #f5f5f5;
+          border-radius: 50%;
         }
       }
+      .userContainerRight {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 35%;
+      }
     }
+    //cardContainer
+    // .cardListContainer {
+    //   height: 100%;
+    //   background-color: #f5f5f5;
+    //   padding: 16px 0;
+
+    //   .card {
+    //     background-color: #fff;
+    //     width: 80%;
+    //     max-width: 768px;
+    //     margin: 0 auto;
+    //     padding: 18px 30px;
+    //     border-radius: 11px;
+    //     box-shadow: #00000029 0px 3px 6px;
+
+    //     .contactInfo {
+    //       color: #6693b5;
+    //       font-size: 12px;
+    //       margin-bottom: 15px;
+    //       font-weight: bold;
+    //     }
+
+    //     .contactItem {
+    //       color: #0f0f0f;
+    //       font-size: 12px;
+    //       margin-top: 12px;
+
+    //       .phone {
+    //         margin-right: 10px;
+    //       }
+    //       .envelope {
+    //         margin-right: 10px;
+    //       }
+    //     }
+    //   }
+    // }
   }
 }
 

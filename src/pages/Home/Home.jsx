@@ -2,10 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Style from './Home.module.scss';
 import menu from '../../images/menu.svg';
+import userAddressCard from '../../images/userAddressCard.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPen } from '@fortawesome/free-solid-svg-icons';
-import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
-import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
+import { faAddressCard } from '@fortawesome/free-solid-svg-icons';
 import Button from '../../components/Button/Button';
 
 const Home = () => {
@@ -75,6 +74,26 @@ const Home = () => {
             path="/"
             width="49%"
           />
+        </div>
+
+        <div className={Style.userContainer}>
+          <div className={Style.userContainerLeft}>
+            <div className={Style.userPhoto}></div>
+            <div className={Style.userName}>Name</div>
+          </div>
+          <div className={Style.userContainerRight}>
+            <Button
+              borderColor="#6693B5"
+              backgroundColor="#6693B5"
+              color="#fff"
+              text="Check in"
+              path="/"
+              width="80px"
+            />
+            <div>
+              <img src={userAddressCard} alt="address-card" />
+            </div>
+          </div>
         </div>
       </div>
       {/* mainContainer */}
