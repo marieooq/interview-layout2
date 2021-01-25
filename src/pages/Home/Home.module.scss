@@ -54,6 +54,7 @@
     border-radius: 5px;
     box-shadow: 0px 3px 6px #00000029;
     padding: 10px 0;
+
     .headerCardInner {
       display: flex;
       justify-content: space-between;
@@ -102,23 +103,8 @@
     .buttonContainer {
       display: flex;
       justify-content: space-between;
+      border-bottom: 1px solid #f5f5f5;
     }
-
-    // .loginContainer {
-    //   text-align: center;
-    //   width: 100%;
-    //   border: 1px solid #fff;
-    //   background-color: #fff;
-    //   border-radius: 18px;
-    //   height: 35px;
-    //   a.loginButton {
-    //     display: inline-block;
-    //     text-decoration: none;
-    //     color: #7ab3de;
-    //     line-height: 35px;
-    //     width: 100%;
-    //   }
-    // }
 
     //cardContainer
     .cardListContainer {

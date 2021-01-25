@@ -65,6 +65,7 @@ const Home = () => {
             color="#fff"
             text="Scheduled Children"
             path="/"
+            width="49%"
           />
           <Button
             borderColor="#6693B5"
@@ -72,24 +73,8 @@ const Home = () => {
             color="#6693B5"
             text="Other Children"
             path="/"
+            width="49%"
           />
-        </div>
-
-        <div className={Style.cardListContainer}>
-          <div className={Style.card}>
-            <div className={Style.contactInfo}>Contact Information</div>
-            <div className={Style.contactItem}>
-              <FontAwesomeIcon icon={faPhoneAlt} className={Style.phone} />
-              Phone Number
-            </div>
-            <div className={Style.contactItem}>
-              <FontAwesomeIcon
-                icon={faEnvelopeSquare}
-                className={Style.envelope}
-              />
-              Email
-            </div>
-          </div>
         </div>
       </div>
       {/* mainContainer */}
