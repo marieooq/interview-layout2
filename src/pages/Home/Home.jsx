@@ -36,7 +36,10 @@ const Home = () => {
             </div>
             <div className={Style.headerCard}>
               <div className={Style.headerCardInner}>
-                <div className={Style.photo}></div>
+                <div
+                  className={Style.photo}
+                  style={{ backgroundColor: '#79df9f' }}
+                ></div>
                 <div className={Style.profileInfoContainer}>
                   <div className={Style.name}>Scheduled: 20</div>
                   <div className={Style.status}>Checked in</div>
