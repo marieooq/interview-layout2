@@ -7,9 +7,10 @@ import Button from '../../components/Button/Button';
 import UserCard from '../../components/UserCard/UserCard';
 
 const Home = () => {
-  const [status, setStatus] = useState('scheduled');
+  const [status, setStatus] = useState('Check in');
+  const [buttonBackgroundColor, setButtonBackgroundColor] = useState('#fff');
   useEffect(() => {
-    console.log(status);
+    // console.log(status);
   }, [status]);
   return (
     <div className={Style.container}>
@@ -77,7 +78,8 @@ const Home = () => {
             />
             <Button
               borderColor="#6693B5"
-              backgroundColor="#fff"
+              buttonBackgroundColor={buttonBackgroundColor}
+              setButtonBackgroundColor={setButtonBackgroundColor}
               color="#6693B5"
               text="Other Children"
               path="/"

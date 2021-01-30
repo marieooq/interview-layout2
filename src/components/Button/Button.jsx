@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import Style from './Button.module.scss';
 
 const Button = ({
   borderColor,
-  backgroundColor,
+  buttonBackgroundColor,
+  setButtonBackgroundColor,
   color,
   text,
   path,
@@ -12,14 +13,23 @@ const Button = ({
   status,
   setStatus,
 }) => {
-  // const [status, setStatus] = useState('scheduled');
-
   const handleChange = (e) => {
-    // setStatus(e.target.value);
     e.preventDefault();
     text === 'Scheduled Children'
       ? setStatus('Check in')
       : setStatus('Drop in');
+
+    // buttonBackgroundColor === '#6693B5'
+    //   ? setButtonBackgroundColor('#fff')
+    //   : setButtonBackgroundColor('#669B5');
+
+    if (buttonBackgroundColor === '#6693B5') {
+      console.log('buttonBackgroundColor', buttonBackgroundColor);
+      setButtonBackgroundColor('#fff');
+    } else {
+      setButtonBackgroundColor('#6693B5');
+      console.log('buttonBackgroundColor', buttonBackgroundColor);
+    }
   };
 
   return (
@@ -27,7 +37,7 @@ const Button = ({
       className={Style.buttonContainer}
       style={{
         border: `1px solid ${borderColor}`,
-        backgroundColor: `${backgroundColor}`,
+        backgroundColor: `${buttonBackgroundColor}`,
         width: `${width}`,
       }}
       onClick={handleChange}
